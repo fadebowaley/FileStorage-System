@@ -19,6 +19,7 @@ class User(RethinkDBModel):
       password_conf = kwargs.get('password_conf')
       if password != password_conf:
         raise ValidationError("Password and Confirm password need to be the same value")
+      
       password = cls.hash_password(password)
       doc = {
         'fullname': fullname,

@@ -1,4 +1,4 @@
 config.py
 run.py
-venv/*
+/venv/*
 rethinkdb-2.4.1.tgz
